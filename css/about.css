@@ -1,0 +1,177 @@
+
+
+.about-service-title{
+  font-size: 60px;
+  max-width: 52.3%;
+  text-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.about-service{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-service-text{
+  width: 48.5%;
+  padding: 10px 0;
+}
+
+.about-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+
+.about-content-div{
+  width: 23%;
+  height: 500px;
+  background-color: #92d7f2;
+  text-align: center;
+  padding-top: 200px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-content-div:nth-child(2){
+  height: 350px;
+  background-image: url('../img/istockphoto-1291113972-612x612.jpg');
+}
+
+.about-content-div:nth-child(3){
+  height: 600px;
+  background-image: url('../img/2150454497.jpg');
+}
+
+.about-content-div:nth-child(4){
+  background-image: url('../img/2149587683.jpg');
+  height: 450px;
+}
+
+.about-content-div:nth-child(1){
+  background-image: url('../img/Man\ Kneeling\,\ Adjusting\ Chair\ in\ Rustic\ Indoor\ Setting.png');
+}
+
+@media (max-width: 1800px) {
+  .about-service-title{
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .about-service-title{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .about-service-title{
+    font-size: 45px;
+  }
+  .about-service-text{
+    width: 47%;
+  }
+  .about-service{
+    margin-bottom: 20px;
+  }
+  .about-content-div{
+    max-height: 400px;
+    margin-bottom: 15px;
+  }
+  .about-content-div:nth-child(2){
+    height: 400px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .about-service-title{
+    font-size: 40px;
+  }
+  .about-content-div{
+    max-height: 350px;
+  }
+  .about-content-div:nth-child(2){
+    height: 350px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .about-service-title{
+    font-size: 50px;
+    max-width: 100%;
+  }
+  .about-service-text{
+    width: 100%;
+  }
+  .about-service{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about-content-div{
+    max-height: 300px;
+  }
+  .about-content-div:nth-child(2){
+    height: 300px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .about-service-title{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-content{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about-content-div{
+    width: 48%;
+    height: auto !important;
+    padding-top: 60%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-service-text{
+    font-size: 15px;
+  }
+  .about-service-title{
+    font-size: 20px;
+  }
+  .about-content-div{
+    border-radius: 4vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-service-text{
+    font-size: 14px;
+  }
+  .about-service-title{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-service-text{
+    font-size: 12px;
+  }
+  .about-service-title{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 325px) {
+  .about-service-text{
+    font-size: 12px;
+  }
+  .about-service-title{
+    font-size: 12px;
+  }
+}

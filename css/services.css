@@ -1,0 +1,248 @@
+.background-service{
+  width: 100%;
+  background: #f1f1f1;
+  padding: 100px 0 150px;
+}
+
+.services-main{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.services-img{
+  border-radius: 3vw;
+  background: #778ba4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/full-shot-people-cleaning-office_23-2150454568.jpg");
+}
+
+.services-content{
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 25px;
+}
+
+.service-content-div{
+  padding: 4%;
+  position: relative;
+  width: 48%; 
+  padding-top: 30%;
+  border-radius: 2vw;
+  overflow: hidden;
+  background: #aabdd4;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-content-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.service-content-div:nth-child(2):hover::before {
+  background-image: url('../img/medium-shot-woman-cleaning-indoors.jpg');
+  background-position-y: -50px; 
+}
+
+.service-content-div:nth-child(3):hover::before {
+  background-image: url('../img/2149212254.jpg'); 
+}
+.service-content-div:first-child:hover::before {
+  background-image: url('../img/2150359024.jpg'); 
+  }
+  
+  
+.service-content-div:last-child:hover::before {
+  background-image: url('../img/2150454489.jpg'); 
+  background-position-x: -10px; 
+
+}
+
+.service-content-div:hover::before {
+  opacity: 0.5; 
+}
+
+.service-content-div:hover .service-section-title{
+  transform: translateY(-20%);
+  font-size: 90%;
+  text-shadow: 
+  -0.5px -0.5px 0 black, 
+  0.5px -0.5px 0 black,  
+  -0.5px 0.5px 0 black,  
+  0.5px 0.5px 0 black;
+}
+
+.service-content-div:hover .service-text {
+  transform: translateY(0);
+}
+
+.service-arrow{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.service-section-title, .service-text {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-section-title{
+  font-size: 30px;
+  transition: transform 0.3s ease, font-size 0.3s ease;;
+  transform: translateY(80%);
+  color: #fff;
+}
+
+.service-text{
+  font-size: 20px;
+  transform: translateY(2000%);
+  transition: transform 0.4s ease;
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .service-section-title{
+  font-size: 25px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .services-content{
+    gap: 20px;
+  }
+  .service-section-title{
+    font-size: 23px;
+    }
+  .service-content-div:nth-child(2):hover::before {
+    background-position-y: -40px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .service-section-title{
+    font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+  .services-content{
+    gap: 15px;
+  }
+  .service-section-title{
+    font-size: 16px;
+    }
+    .service-content-div:hover .service-section-title{
+      font-size: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+  .services-main {
+    flex-direction: column;
+  }
+
+  .service-section-title{
+    font-size: 27px;
+    }
+
+  .services-img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 25px;
+  }
+
+  .services-content {
+    width: 100%;
+  }
+
+  .service-content-div {
+    width: 48%;
+    padding: 3%;
+    padding-top: 20%;
+    border-radius: 3vw;
+  }
+  .services-content{
+    gap: 25px;
+  }
+  .service-content-div:hover .service-section-title{
+    font-size: 110%;
+  }
+  .service-content-div:nth-child(4):hover::before {
+    background-position-x: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-img {
+    height: auto;
+    padding-top: 60%;
+    margin-bottom: 20px;
+    border-radius: 4vw;
+  }
+
+   .services-content{
+    gap: 16px;
+  }
+    
+  .service-content-div{
+    border-radius: 4vw;
+  }
+
+  .service-content-div:first-child:hover .service-section-title{
+    font-size: 100%;
+  }
+
+  .service-section-title {
+    font-size: 20px;
+  }
+
+  .service-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .background-service{
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .service-arrow{
+    width: 12%;
+  }
+
+   .service-content-div{
+    width: 100%;
+    border-radius: 5vw;
+    padding: 4%;
+    padding-top: 20%;
+  }
+
+  .service-section-title {
+    font-size: 22px;
+  }
+
+  .service-text {
+    font-size: 18px;
+  }
+  .service-content-div{
+    background-position: bottom;
+  }
+}
+
