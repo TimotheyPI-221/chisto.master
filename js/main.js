@@ -52,23 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
     event.stopPropagation(); 
   });
 
-
-  // document.querySelectorAll('.nav-link').forEach(link => {
-  //   link.addEventListener('click', function(e) {
-  //     e.preventDefault();
-  //     const target = document.querySelector(this.getAttribute('href'));
-  //     const offset = 120; // Отступ в пикселях
-  //     const bodyRect = document.body.getBoundingClientRect().top;
-  //     const elementRect = target.getBoundingClientRect().top;
-  //     const elementPosition = elementRect - bodyRect;
-  //     const offsetPosition = elementPosition - offset;
-
-  //     window.scrollTo({
-  //       top: offsetPosition,
-  //       behavior: 'smooth'
-  //     });
-  //   });
-  // });
 const swiper = new Swiper('.swiper', {
   effect: 'coverflow',
   grabCursor: true,
@@ -77,8 +60,8 @@ const swiper = new Swiper('.swiper', {
   coverflowEffect: {
     rotate: -1,   // Угол поворота слайдов
     stretch: 0,   // Расстояние между слайдами
-    depth: 200,   // Глубина эффекта
-    modifier: 4,  // Интенсивность эффекта
+    depth: 150,   // Глубина эффекта
+    modifier: 6,  // Интенсивность эффекта
     slideShadows: true, // Тени на слайдах
   },
   direction: 'horizontal',
@@ -86,8 +69,8 @@ const swiper = new Swiper('.swiper', {
   loopAdditionalSlides: 2, // Добавляем дополнительные слайды для зацикливания
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500, // Задержка в миллисекундах (в твоем случае 2500 = 2.5 секунды)
-    disableOnInteraction: false, // Продолжить автопрокрутку даже после взаимодействия с слайдером
+    delay: 2500, 
+    disableOnInteraction: false, 
   },
   pagination: {
     el: '.swiper-pagination',

@@ -15,7 +15,7 @@
   background: #778ba4;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/full-shot-people-cleaning-office_23-2150454568.jpg");
+  background-image: url("../img/full-shot-people-cleaning-office_23-2150454568.webp");
 }
 
 .services-content{
@@ -35,6 +35,7 @@
   background: #aabdd4;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 0.3s;
 }
 
 .service-content-div::before {
@@ -50,37 +51,52 @@
   transition: opacity 0.5s ease;
 }
 
+.service-content-div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2; 
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+}
+
+.service-content-div:hover::after {
+  opacity: 1;
+}
+
 .service-content-div:nth-child(2):hover::before {
-  background-image: url('../img/medium-shot-woman-cleaning-indoors.jpg');
+  background-image: url('../img/medium-shot-woman-cleaning-indoors.webp');
   background-position-y: -50px; 
 }
 
 .service-content-div:nth-child(3):hover::before {
-  background-image: url('../img/2149212254.jpg'); 
+  background-image: url('../img/2149212254.webp'); 
 }
 .service-content-div:first-child:hover::before {
-  background-image: url('../img/2150359024.jpg'); 
+  background-image: url('../img/2150359024.webp'); 
   }
   
   
 .service-content-div:last-child:hover::before {
-  background-image: url('../img/2150454489.jpg'); 
+  background-image: url('../img/2150454489.webp'); 
   background-position-x: -10px; 
 
 }
 
 .service-content-div:hover::before {
-  opacity: 0.5; 
+  opacity: 0.8; 
+}
+
+.service-content-div:hover {
+  transform: scale(1.05); 
 }
 
 .service-content-div:hover .service-section-title{
   transform: translateY(-20%);
-  font-size: 90%;
-  text-shadow: 
-  -0.5px -0.5px 0 black, 
-  0.5px -0.5px 0 black,  
-  -0.5px 0.5px 0 black,  
-  0.5px 0.5px 0 black;
 }
 
 .service-content-div:hover .service-text {
@@ -96,7 +112,7 @@
 
 .service-section-title, .service-text {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   opacity: 1;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }

@@ -1,7 +1,7 @@
 .background-slider{
   background: #E6E6E6;
   padding: 100px 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .swiper-slide {
@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .slide {
@@ -21,35 +22,35 @@
 }
 
 .slide-1{
-  background-image: url("../img/first.jpg");
+  background-image: url("../img/first.webp");
 }
 
 .slide-2{
-  background-image: url("../img/second.jpg");
+  background-image: url("../img/second.webp");
 }
 
 .slide-3{
-  background-image: url("../img/photo-3.jpg");
+  background-image: url("../img/photo-3.webp");
 }
 
 .slide-4{
-  background-image: url("../img/photo-4.jpg");
+  background-image: url("../img/photo-4.webp");
 }
 
 .slide-5{
-  background-image: url("../img/photo-5.jpg");
+  background-image: url("../img/photo-5.webp");
 }
 
 .slide-6{
-  background-image: url("../img/photo-6.jpg");
+  background-image: url("../img/photo-6.webp");
 }
 
 .slide-7{
-  background-image: url("../img/photo-7.jpg");
+  background-image: url("../img/photo-7.webp");
 }
 
 .slide-8{
-  background-image: url("../img/photo-8.jpg");
+  background-image: url("../img/photo-8.webp");
 }
 
 .swiper {

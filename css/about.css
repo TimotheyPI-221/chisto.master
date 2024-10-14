@@ -38,21 +38,21 @@
 
 .about-content-div:nth-child(2){
   height: 350px;
-  background-image: url('../img/istockphoto-1291113972-612x612.jpg');
+  background-image: url('../img/istockphoto-1291113972-612x612.webp');
 }
 
 .about-content-div:nth-child(3){
   height: 600px;
-  background-image: url('../img/2150454497.jpg');
+  background-image: url('../img/2150454497.webp');
 }
 
 .about-content-div:nth-child(4){
-  background-image: url('../img/2149587683.jpg');
+  background-image: url('../img/2149587683.webp');
   height: 450px;
 }
 
 .about-content-div:nth-child(1){
-  background-image: url('../img/Man\ Kneeling\,\ Adjusting\ Chair\ in\ Rustic\ Indoor\ Setting.png');
+  background-image: url('../img/Man\ Kneeling\,\ Adjusting\ Chair\ in\ Rustic\ Indoor\ Setting.webp');
 }
 
 @media (max-width: 1800px) {

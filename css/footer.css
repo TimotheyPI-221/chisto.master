@@ -39,6 +39,12 @@
   width: 26%;
   background-repeat: no-repeat;
   background-size: contain;
+  filter: brightness(1) invert(0); /* Изменяет цвет на белый */
+  transition: filter 0.3s; 
+}
+
+.footer-contact-icon:hover {
+  filter: brightness(0) invert(0.8); /* Цвет при наведении */
 }
 
 .footer-contact-icon:first-child{
